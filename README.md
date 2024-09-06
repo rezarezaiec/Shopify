@@ -1,5 +1,5 @@
 # Preview
-![Project preview](./preview/preview-4.png "Project Preview")
+![Project preview](./preview-design/preview-4.png "Project Preview")
 
 # Shopify Project
 This project is designed to simple Shopify.
