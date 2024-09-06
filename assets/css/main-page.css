@@ -1,0 +1,95 @@
+/********** Start Main **********/
+.main {
+  border-top: 1px solid #727070;
+  border-bottom: 1px solid #727070;
+}
+/********** End Main **********/
+
+/* Start General Styling */
+.border-grey {
+  border-color: hsla(0, 2%, 51%, 1) !important;
+}
+
+.header {
+  background-image: url("../../public/images/main-page/Home.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
+
+.header .navbar-nav .nav-item a {
+  color: white;
+}
+/* End General Styling */
+
+/* Start Main Info Section Styling */
+.main-info .main-info-header .nav-link {
+  position: relative;
+}
+
+.main-info .main-info-header .nav-link::before {
+  content: "";
+  position: absolute;
+  background-color: black;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  transition: width 0.4s;
+}
+
+.main-info .main-info-header .nav-link:hover::before {
+  width: 100%;
+}
+
+.main-info-cards .card {
+  overflow: hidden;
+}
+
+.main-info-cards .card img {
+  transition: transform 0.4s;
+}
+
+.main-info-cards .card img:hover {
+  transform: scale(1.05);
+}
+/* End Main Info Section Styling */
+
+/* Start Main Blog Section Styling */
+.main-blog .card {
+  transition: transform 0.4s;
+}
+
+.card {
+  transition: transform 0.4s;
+  cursor: pointer;
+}
+
+.main-blog .card:hover {
+  transform: scale(1.04);
+}
+
+.main-blog .card img {
+  filter: brightness(0.7);
+}
+/* End Main Blog Section Styling */
+
+/* Start Responsive Styling */
+@media (max-width: 1200px) {
+  .main-about .about-info .info-desc {
+    display: -webkit-box;
+    -webkit-line-clamp: 8;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+}
+
+@media (max-width: 768px) {
+  .main-about .about-info .info-desc {
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+}
+/* End Responsive Styling */

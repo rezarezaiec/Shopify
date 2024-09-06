@@ -1,0 +1,18 @@
+  /**** Blog Page Section ****/
+ .blog-banner{
+  margin: 2rem 0;
+ }
+  @media (max-width: 768px) {
+    .blog-page .blog-info .info-desc p {
+      display: -webkit-box;
+      --webkit-line-clamp: 7;
+      --webkit-box-orient: vertical;
+      overflow: hidden;
+    }
+    .blog-group .blog-list .list-item .list-item-info .info-desc {
+      display: -webkit-box;
+      --webkit-line-clamp: 7;
+      --webkit-box-orient: vertical;
+      overflow: hidden;
+    }
+  }
